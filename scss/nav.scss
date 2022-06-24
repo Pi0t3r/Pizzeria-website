@@ -1,9 +1,11 @@
 nav {
-    position: relative;
+    position: fixed;
+    top: 0;
 	width: 100%;
 	height: 60px;
 	background-color: #fff;
 	line-height: 60px;
+    z-index: 1;
 	.logo {
         position: absolute;
         left: 5%;
@@ -21,4 +23,5 @@ nav {
         right: 5%;
         font-size: 30px;
     }
+    
 }
