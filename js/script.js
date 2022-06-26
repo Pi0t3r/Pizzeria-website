@@ -1,11 +1,14 @@
-const nav = document.querySelector('.navi')
-const btn = document.querySelector('.bars')
-const allNavItems = document.querySelectorAll('.nav-items ul li')
+const navi = document.querySelector('.navi')
+const btn = document.querySelector('.fa-bars')
+const close = document.querySelector('.fa-xmark')
+const navItems = document.querySelectorAll('.effect')
 
 
-// const handleNav = () => {
-//     nav.classList.toggle('active')
-//     allNavItems.forEach(item -> {
-    
-//     })
-// }
+const moveNav = () => {
+    navi.classList.add('active')
+}
+const closeNav = () => {
+    navi.classList.remove('active')
+}
+btn.addEventListener('click',moveNav)
+close.addEventListener('click',closeNav)

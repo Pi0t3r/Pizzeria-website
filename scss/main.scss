@@ -14,12 +14,25 @@ body {
 	margin: 0 auto;
 	overflow: hidden;
 }
+
+
 .navi{
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: #000;
     z-index: 2;
+   transform: translateX(100%);
+   transition: transform 1s;
+    .close{
+        position: absolute;
+        right: 10%;
+        top: 10%;
+        font-size: 40px;
+        i{
+            color: #fff;
+        }
+    }
     .nav-items{
         position: absolute;
         top: 50%;
@@ -41,4 +54,7 @@ body {
             }
         }
     }
+}
+.active{
+    transform: translateX(0);
 }

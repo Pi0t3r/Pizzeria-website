@@ -19,11 +19,28 @@ body {
 }
 
 .navi {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   background-color: #000;
   z-index: 2;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+}
+
+.navi .close {
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  font-size: 40px;
+}
+
+.navi .close i {
+  color: #fff;
 }
 
 .navi .nav-items {
@@ -52,5 +69,10 @@ body {
 
 .navi .nav-items ul li a:hover {
   color: #333;
+}
+
+.active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 /*# sourceMappingURL=main.css.map */
