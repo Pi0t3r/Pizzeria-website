@@ -1,0 +1,33 @@
+main {
+  padding-top: 20px;
+}
+
+main .aboutus .text h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+main .aboutus .text p {
+  text-align: justify;
+  padding: 20px;
+}
+
+main .menu .title h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+main .menu .weekMenu h2 {
+  text-align: center;
+}
+
+main .menu .weekMenu h3 {
+  text-align: center;
+}
+
+main .menu .weekMenu p {
+  text-align: justify;
+  padding: 0 15px;
+}
+/*# sourceMappingURL=main2.css.map */

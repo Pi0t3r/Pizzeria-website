@@ -10,5 +10,7 @@ const moveNav = () => {
 const closeNav = () => {
     navi.classList.remove('active')
 }
+
 btn.addEventListener('click',moveNav)
 close.addEventListener('click',closeNav)
+navItems.addEventListener('click',closeNav)
