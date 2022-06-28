@@ -24,10 +24,45 @@ main .menu .weekMenu h2 {
 
 main .menu .weekMenu h3 {
   text-align: center;
+  padding: 15px 0;
 }
 
 main .menu .weekMenu p {
   text-align: justify;
-  padding: 0 15px;
+  padding: 5px 15px;
+}
+
+main .menu .weekMenu p span {
+  font-weight: bold;
+  font-size: 17px;
+}
+
+main .contact {
+  margin: 20px 0;
+}
+
+main .contact .data {
+  text-align: center;
+}
+
+main .contact .data h1 {
+  text-transform: uppercase;
+}
+
+main .contact .data p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .gallery .images img {
+  width: 90%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=main2.css.map */
