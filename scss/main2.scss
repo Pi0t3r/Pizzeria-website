@@ -6,10 +6,12 @@ main {
 				text-transform: uppercase;
 				text-align: center;
                 padding-bottom: 10px;
+                animation: grow 1s forwards;
 			}
             p{
                 text-align: justify;
                 padding: 20px;
+                animation: moveToRight 1s forwards;
             }
 		}
 	}
@@ -18,12 +20,12 @@ main {
             h1{
                 text-transform: uppercase;
                 text-align: center;
+                animation: grow 1s forwards;
             }
         }
         .weekMenu{
             h2{
                 text-align: center;
-                // text-transform: uppercase;
             }
             h3{
                 text-align: center;
@@ -61,5 +63,24 @@ main {
                 border-radius: 10px;
             }
         }
+    }
+}
+
+@keyframes grow{
+    from{
+        transform: scale(0.00001);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+
+@keyframes moveToRight{
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
     }
 }

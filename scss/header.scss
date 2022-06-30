@@ -1,7 +1,7 @@
 header {
 	position: relative;
-    z-index: -1;
-    
+	z-index: -1;
+
 	.background {
 		img {
 			width: 100%;
@@ -11,23 +11,43 @@ header {
 		color: #fff;
 		top: 0;
 		h1 {
+			font-family: 'Tenor Sans', sans-serif;
 			position: absolute;
 			top: 20%;
 			left: 50%;
 			transform: translateX(-50%);
 			text-transform: uppercase;
-            font-size: 38px;
-			font-family: 'Tenor Sans', sans-serif;
+			font-size: 38px;
+			animation: moveRightToLeft 1s forwards;
 		}
 		p {
-            position: absolute;
+			position: absolute;
 			top: 40%;
 			left: 50%;
 			transform: translateX(-50%);
 			width: 50%;
-            font-size: 20px;
+			font-size: 20px;
 			font-family: 'Tenor Sans', sans-serif;
+			animation: moveLeftToRight 1s forwards;
 		}
 	}
-    
+}
+
+@keyframes moveRightToLeft{
+	from{
+		transform: translateX(100%);
+	}
+	to{
+		transform: translateX(-50%);
+	}
+}
+
+
+@keyframes moveLeftToRight{
+	from{
+		transform: translateX(-200%);
+	}
+	to{
+		transform: translateX(-50%);
+	}
 }
