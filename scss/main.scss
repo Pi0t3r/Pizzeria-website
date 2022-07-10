@@ -24,7 +24,7 @@ html{
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: $black;
     z-index: 2;
    transform: translateX(100%);
    transition: transform 1s;
@@ -34,7 +34,7 @@ html{
         top: 10%;
         font-size: 40px;
         i{
-            color: #fff;
+            color: $white;
         }
     }
     .nav-items{
@@ -49,11 +49,11 @@ html{
                 a{
                     text-decoration: none;
                     text-transform: uppercase;
-                    color: #fff;
+                    color: $white;
                     transition: color .3s;
                 }
                 a:hover{
-                    color: #333;
+                    color: $black;
                 }
             }
         }

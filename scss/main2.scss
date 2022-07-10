@@ -25,11 +25,11 @@ main {
 		}
 		.weekMenu {
 			h2 {
-                color: #950101;
+                color: $secondary;
 				text-align: center;
 			}
 			h3 {
-                color: #950101;
+                color: $secondary;
 				text-align: center;
 				padding: 15px 0;
 			}
@@ -52,7 +52,7 @@ main {
 				text-transform: uppercase;
 			}
             h3{
-                color: #950101;
+                color: $secondary;
             }
 			p {
 				display: flex;
