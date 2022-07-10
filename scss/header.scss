@@ -1,3 +1,4 @@
+@import './colors';
 header {
 	position: relative;
 	z-index: -1;
@@ -19,6 +20,7 @@ header {
 			text-transform: uppercase;
 			font-size: 38px;
 			animation: moveRightToLeft 1s forwards;
+			
 		}
 		p {
 			position: absolute;
@@ -49,5 +51,18 @@ header {
 	}
 	to{
 		transform: translateX(-50%);
+	}
+}
+
+@media(min-width: 960px){
+	header{
+		.title{
+			h1{
+				font-size: 75px;
+			}
+			p{
+				font-size: 31px;
+			}
+		}
 	}
 }

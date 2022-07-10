@@ -81,4 +81,13 @@ header .title p {
             transform: translateX(-50%);
   }
 }
+
+@media (min-width: 960px) {
+  header .title h1 {
+    font-size: 75px;
+  }
+  header .title p {
+    font-size: 31px;
+  }
+}
 /*# sourceMappingURL=header.css.map */

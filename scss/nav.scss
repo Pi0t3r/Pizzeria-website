@@ -26,3 +26,19 @@ nav {
     }
     
 }
+
+
+@media (min-width:960px){
+	nav{
+		.logo{
+			a{
+				font-size: 36px;
+			}
+		}
+	}
+}
+@media (min-width:970px){
+	nav{
+		width: 960px;
+	}
+}
